@@ -99,7 +99,7 @@ function CreateLinkHentai(count)
 	if (GettingRaitingList(10) != "") then
 		tags = GettingRaitingList(10)
 	end
-	local hentaiLink = "https://api.rule34.xxx/index.php?page=dapi&s=post&tags=".. tags .."&json=1&q=index&limit=1&pid=" .. count
+	local hentaiLink = "https://api.rule34.xxx/index.php?&api_key=79f67625912bc51fea665be1d7d9b7ec5234399e0cd5df477321784b3e1a6e1e11df75ca3ce3b173132c1ca14f1d6629c1798df7bbe6b3bea7d09db4c1f997d7&user_id=1179743&page=dapi&s=post&tags=".. tags .."&json=1&q=index&limit=1&pid=" .. count
 
 	http.Fetch(hentaiLink, 
 		function(response)
@@ -226,4 +226,5 @@ function WriteHentai(imageHentai, id, tags)
 		LoadingHentai()
 	end)
 end
+
 ---------------------------------END WRITE HENTAI---------------------------------	
